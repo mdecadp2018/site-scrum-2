@@ -45,7 +45,7 @@ init_mathjax();
 <script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
 <style>
 img {
-    border: 3px solid black;
+    border: 3px solid red;
 }
 </style>
 
@@ -78,7 +78,7 @@ $(function(){
 <p>由於在超文件中所引用的圖片檔案, 在無明顯外框標示界定下, 可能會與頁面說明產生混淆, 因此利用 Leo Editor 開啟 cmsimfly.leo, 直接在 Flask 程式中的&nbsp;syntaxhighlight 函式加入設定 img border 的 style css 碼, 可以設定動態內容管理系統, 而修改&nbsp;syntaxhighlight2, 則可修改靜態的頁面 css 設定. 所加入的 css 設定如下:</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;style&gt;
 img {
-    border: 3px solid black;
+    border: 3px solid red;
 }
 &lt;/style&gt;</pre>
 <p>start.bat 批次檔案, 以 SciTE 編輯器開啟.</p>
@@ -95,19 +95,28 @@ img {
 <p><img src="./../images/p37_09-24-45.png" width="501" height="204" alt=""></p>
 <p>將遠端的作業倉儲內容, git clone 一份到近端, 以便在工作目錄中進行改版.</p>
 <p><img src="./../images/p37_09-26-46.png" width="652" height="304" alt=""></p>
+<p>將遠端倉儲 git clone 到近端後, 利用 cd 更換目錄, 進入作業倉儲.</p>
 <p><img src="./../images/p37_09-27-53.png" width="705" height="478" alt=""></p>
 <p>將遠端的作業倉儲 git clone 到近端後, 進入該倉儲目錄後, 可以利用 python wsgi.py 啟動動態內容管理系統.</p>
 <p><img src="./../images/p37_09-28-26.png" width="735" height="662" alt=""></p>
+<p>python wsgi.py 指令表示要利用 Python 解譯器執行作業目錄中的 wsgi.py 程式, 啟動後, 可以利用瀏覽器連結近端的 CMSimfly 內容管理系統.</p>
 <p><img src="./../images/p37_09-30-03.png" width="600" height="394" alt=""></p>
 <p><img src="./../images/p37_09-30-25.png" width="600" height="219" alt=""></p>
+<p>由於近端利用 python wsgi.py 啟動時, 所使用的 SSL 數位簽章為 self-signed, 因此需要進一步確認後, 才能完成連結. 但是 self-signed 的數位簽章, 並未經過第三方公證, 因此被瀏覽器認定此一連結為 unsafe, 不過, 因此此一 self-signed 所建立的 https 連結, 旨在瀏覽器與伺服器間傳遞資料時, 能夠透過此一數位簽章編碼, 以避免在兩端間以明碼傳遞資料, 尤其當伺服器安裝在區域網路或廣域網路時, 直接使用 http 協定傳遞使用者的帳號與密碼, 是沒有必要且容易被中途攔截.</p>
 <p><img src="./../images/p37_09-30-56.png" width="600" height="313" alt=""></p>
+<p>完成連結後將可在近端以內建的 admin 密碼登入, 開始維護網站內容.</p>
 <p><img src="./../images/p37_09-31-24.png" width="785" height="570" alt=""></p>
+<p>利用滑鼠點擊 login 登入.</p>
 <p><img src="./../images/p37_09-31-57.png" width="600" height="522" alt=""></p>
+<p>輸入 admin 後登入.</p>
 <p><img src="./../images/p37_09-32-19.png" width="671" height="477" alt=""></p>
+<p>登入後將內定轉到 edit all 的畫面, 也就是編輯整個位於 config 目錄中的 content.htm 檔案.</p>
 <p><img src="./../images/p37_09-32-40.png" width="600" height="335" alt=""></p>
+<p>需要編輯其中任何一頁時, 先連結到該頁面後, 按下 Edit 後可以在 tinymce4 編輯器中編輯內容.</p>
 <p><img src="./../images/p37_09-33-21.png" width="528" height="498" alt=""></p>
 <p><img src="./../images/p37_09-33-50.png" width="741" height="531" alt=""></p>
 <p><img src="./../images/p37_09-34-10.png" width="600" height="284" alt=""></p>
+<p>由於 CMSimfly 動態系統中, 以 h1, h2, h3 等三個超文件標註作為各頁面標題, 且循序排列各 h1, h2 與 h3 標題內容, 因此使用者可以在上一個頁面 (可能是 h1, h2 或 h3 頁面) 超文件最後面加入標題, 或者在下一頁標題的最前方加入頁面標題, 下列畫面選擇在組員操作影片上方新增一個 h1 標題頁面, 標題為"期中作業操作".</p>
 <p><img src="./../images/p37_09-35-01.png" width="418" height="445" alt=""></p>
 <p><img src="./../images/p37_09-35-51.png" width="600" height="353" alt=""></p>
 <p></p><br />pelican 網誌 << <a href='pelican 網誌.html'>Previous</a> <a href='組員操作影片.html'>Next</a> >> 組員操作影片</section></div></body></html>
