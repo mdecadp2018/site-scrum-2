@@ -25,7 +25,7 @@
 <v t="amd.20160714225245.2" a="E"><vh>about cmsimfly</vh>
 <v t="amd.20160714230137.1"><vh>@edit .gitignore</vh></v>
 <v t="amd.20160714230155.1"><vh>@edit LICENSE</vh></v>
-<v t="amd.20160715000709.1" a="E"><vh>註解</vh>
+<v t="amd.20160715000709.1"><vh>註解</vh>
 <v t="amd.20160715211540.1"><vh>處理 url 與 edit</vh></v>
 <v t="amd.20160715213810.1"><vh>必須處理 downloads 與 images 目錄</vh></v>
 <v t="leo.20180625155103.1" a="E"><vh>改為 pybean based</vh>
@@ -36,7 +36,7 @@
 <v t="leo.20180712144340.1"><vh>改回手動轉靜態網頁</vh></v>
 </v>
 </v>
-<v t="leo.20180701102916.1" a="E"><vh>2018Summer 改版</vh>
+<v t="leo.20180701102916.1"><vh>2018Summer 改版</vh>
 <v t="leo.20180702104314.1"><vh>整合設定檔案</vh></v>
 <v t="leo.20180701205822.1"><vh>editorhead 修改</vh></v>
 <v t="leo.20180701212101.1"><vh>有關 Cango library</vh></v>
@@ -947,6 +947,11 @@ window.location= 'https://' + location.host + location.pathname + location.searc
 &lt;script type="text/javascript" src="/static/gearUtils-05.js"&gt;&lt;/script&gt;
 &lt;script src="https://scrum-3.github.io/web/brython/brython.js"&gt;&lt;/script&gt;
 &lt;script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+img {
+    border: 3px solid black;
+}
+&lt;/style&gt;
 '''
 
 
@@ -2467,6 +2472,11 @@ init_mathjax();
 &lt;script type="text/javascript" src="./../static/gearUtils-05.js"&gt;&lt;/script&gt;
 &lt;script src="https://scrum-3.github.io/web/brython/brython.js"&gt;&lt;/script&gt;
 &lt;script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"&gt;&lt;/script&gt;
+&lt;style&gt;
+img {
+    border: 3px solid black;
+}
+&lt;/style&gt;
 '''
 
 
